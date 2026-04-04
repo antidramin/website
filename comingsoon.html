@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Anti-Dramin</title>
+    <meta name="description" content="Relief from intellectual aches and pains. Something big is coming. Stay tuned for the launch of Anti-Dramin.">
+    <meta name="keywords" content="anti-dramin, coming soon, launch, pharmaceutical, relief">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Anti-Dramin">
+    <link rel="canonical" href="https://yourusername.github.io/repo-name/">
+    <meta property="og:title" content="Coming Soon | Anti-Dramin">
+    <meta property="og:description" content="Relief from intellectual aches and pains. Something big is coming.">
+    <meta property="og:image" content="https://yourusername.github.io/repo-name/anti.png">
+    <meta property="og:url" content="https://yourusername.github.io/repo-name/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Coming Soon | Anti-Dramin">
+    <meta name="twitter:description" content="Relief from intellectual aches and pains. Something big is coming.">
+    <meta name="twitter:image" content="https://yourusername.github.io/repo-name/anti.png">
+    <link rel="icon" type="image/png" href="favicon-32.png">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Anti-Dramin - Coming Soon",
+        "description": "Relief from intellectual aches and pains. Something big is coming.",
+        "url": "https://antidramin.com"
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+            background: #0a1628;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.1);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b22234;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d42b3e;
+        }
+
+        /* Animated gradient orbs */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: drift 20s infinite ease-in-out;
+        }
+
+        .orb-red {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(178,34,52,0.6) 0%, transparent 70%);
+            top: -200px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .orb-white {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+            bottom: -150px;
+            right: -100px;
+            animation-delay: -7s;
+        }
+
+        .orb-blue {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(30,60,114,0.8) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: -14s;
+        }
+
+        @keyframes drift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(50px, -30px) scale(1.1); }
+            66% { transform: translate(-30px, 50px) scale(0.9); }
+        }
+
+        /* Particle stars */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: white;
+            border-radius: 50%;
+            animation: float-particle 15s infinite linear;
+            opacity: 0.6;
+        }
+
+        @keyframes float-particle {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
+        }
+
+        /* Animated grid lines */
+        .grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: grid-move 30s infinite linear;
+        }
+
+        @keyframes grid-move {
+            0% { background-position: 0 0; }
+            100% { background-position: 50px 50px; }
+        }
+
+        /* Main content */
+        .container {
+            text-align: center;
+            z-index: 10;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .hero-image {
+            max-width: 220px;
+            width: 60%;
+            height: auto;
+            filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+            animation: hero-float 4s infinite ease-in-out;
+        }
+
+        @keyframes hero-float {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-15px) scale(1.02); }
+        }
+
+        .coming-soon {
+            margin-top: 2.5rem;
+            font-size: 4rem;
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            text-shadow: 
+                0 0 20px rgba(178,34,52,0.8),
+                0 0 40px rgba(178,34,52,0.5),
+                0 0 60px rgba(30,60,114,0.5),
+                4px 4px 0 #b22234,
+                -2px -2px 0 #3c5aa8;
+            animation: glow-pulse 2s infinite ease-in-out;
+        }
+
+        @keyframes glow-pulse {
+            0%, 100% { 
+                text-shadow: 
+                    0 0 20px rgba(178,34,52,0.8),
+                    0 0 40px rgba(178,34,52,0.5),
+                    0 0 60px rgba(30,60,114,0.5),
+                    4px 4px 0 #b22234,
+                    -2px -2px 0 #3c5aa8;
+            }
+            50% { 
+                text-shadow: 
+                    0 0 30px rgba(178,34,52,1),
+                    0 0 60px rgba(178,34,52,0.8),
+                    0 0 90px rgba(30,60,114,0.8),
+                    4px 4px 0 #b22234,
+                    -2px -2px 0 #3c5aa8;
+            }
+        }
+
+        .subtitle {
+            margin-top: 1.5rem;
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.85);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        .subtitle::before,
+        .subtitle::after {
+            content: ' ★ ';
+            color: #b22234;
+        }
+
+        /* Shooting stars */
+        .shooting-star {
+            position: fixed;
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, white, transparent);
+            animation: shoot 3s infinite linear;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        @keyframes shoot {
+            0% { transform: translateX(-100px) translateY(0); opacity: 1; }
+            100% { transform: translateX(100vw) translateY(100px); opacity: 0; }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .coming-soon { 
+                font-size: 2.5rem; 
+                letter-spacing: 0.15em;
+            }
+            .subtitle { font-size: 1rem; }
+            .hero-image { max-width: 320px; }
+            .orb-red, .orb-white { width: 300px; height: 300px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="orb orb-red"></div>
+    <div class="orb orb-white"></div>
+    <div class="orb orb-blue"></div>
+    <div class="grid"></div>
+    <div class="particles" id="particles"></div>
+    
+    <div class="shooting-star" style="top: 20%; left: -100px; animation-delay: 0s;"></div>
+    <div class="shooting-star" style="top: 60%; left: -100px; animation-delay: 1.5s;"></div>
+    <div class="shooting-star" style="top: 40%; left: -100px; animation-delay: 3s;"></div>
+
+    <div class="container">
+        <img src="anti.png" alt="Coming Soon" class="hero-image" onerror="this.style.opacity='0.5'">
+        <h1 class="coming-soon">Coming Soon</h1>
+    </div>
+
+    <script>
+        // Generate floating particles
+        const particlesContainer = document.getElementById('particles');
+        const particleCount = 40;
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.width = (Math.random() * 3 + 1) + 'px';
+            particle.style.height = particle.style.width;
+            particlesContainer.appendChild(particle);
+        }
+    </script>
+</body>
+</html>
